@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.engine('handlebars', handlebars.engine);
 
 app.set('view engine', 'handlebars');
-app.set('port', 3000);
+app.set('port', 3197);
 
 //GET function, takes query stings, renders handlebar "getRecieved"
 app.get('/',function(req,res){
