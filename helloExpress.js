@@ -10,9 +10,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.engine('handlebars', handlebars.engine);
-
+console.log(process.argv[2]);
 app.set('view engine', 'handlebars');
-app.set('port', process.argv[2]);
+app.set('port', 9731);
 console.log(process.argv[2]);
 
 //GET function, takes query stings, renders handlebar "getRecieved"
