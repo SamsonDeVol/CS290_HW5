@@ -13,6 +13,7 @@ app.engine('handlebars', handlebars.engine);
 
 app.set('view engine', 'handlebars');
 app.set('port', process.argv[2]);
+console.log(process.argv[2]);
 
 //GET function, takes query stings, renders handlebar "getRecieved"
 app.get('/',function(req,res){
